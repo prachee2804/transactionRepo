@@ -3,16 +3,16 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>trans_repo</artifactId>
+	<artifactId>tests</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule</packaging>
-	<name>Mule trans_repo Application</name>
+	<name>Mule tests Application</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<mule.version>3.9.4</mule.version>
+		<mule.version>3.9.4-20210225</mule.version>
     	<mule.tools.version>1.7</mule.tools.version>
 	</properties>
 

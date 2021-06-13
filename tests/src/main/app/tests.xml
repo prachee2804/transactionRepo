@@ -7,8 +7,8 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
-	<flow name="trans_repoFlow">
-		<http:listener config-ref="HTTP_Listener_Configuration" path="/api" doc:name="HTTP"/>
-		<logger message="#[&quot;message pass&quot;]" level="INFO" doc:name="Logger"/>
+	<flow name="testsFlow">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/testing" doc:name="HTTP"/>
+		<logger message="#[&quot;test&quot;]" level="INFO" doc:name="Logger"/>
 	</flow>
 </mule>
