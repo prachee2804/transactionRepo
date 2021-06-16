@@ -1,0 +1,31 @@
+#%RAML 1.0
+title: raml_prac
+resourceTypes:
+  collection:
+    post:
+      queryParameters:
+        mishita:
+          type: string
+          required: true
+        manvi:
+          type: string
+          required: true
+      headers:
+        janvi:
+          type: string
+          required: true
+
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "test": "abc"
+                }
+/library:
+  type:
+    collection:
+      post:
