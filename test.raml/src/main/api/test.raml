@@ -1,0 +1,27 @@
+#%RAML 1.0
+title: test
+resourceTypes:
+  collection:
+    post:
+      headers:
+        test1:
+          type: string
+          required: false
+        test2:
+          type: string
+          required: true 
+
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "test":"positive"   
+                }
+/test:
+  type:
+    collection
+  post:
