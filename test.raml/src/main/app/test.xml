@@ -27,7 +27,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
     <flow name="post:/test:test-config">
 		<choice doc:name="Choice">
 			<when expression="#[message.inboundProperties.test2== &quot;abc&quot;]">
-				<logger message="#[&quot;success&quot;]" level="INFO" doc:name="Logger"/>
+				<logger message="#['success']" level="INFO" doc:name="Logger"/>
 				<set-variable variableName="set" value="#[message.inboundProperties.test1]" doc:name="Variable"/>
 				<dw:transform-message doc:name="Transform Message">
 					<dw:set-variable variableName="set"><![CDATA[%dw 1.0
